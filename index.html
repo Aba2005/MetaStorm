@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/my_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <title>MetaStorm</title>
+</head>
+
+<body>
+    <header>
+        <div class="gradient">
+            <nav class="nav">
+                <img src="./imags/Logo_MetaStorm.png" alt="Logo" class="logo">
+                <div class="nav-links">
+                    <a href="./index.html" class="nav-link">Main</a>
+                    <a href="./about.html" class="nav-link">About</a>
+                    <a href="./team.html" class="nav-link">Team</a>
+                </div>
+                <div class="icons">
+                    <a href="https://twitter.com/METASTORM_APP" class="icon" target="_blank">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 2.20703C21.193 2.56465 20.326 2.80628 19.4146 2.91549C20.355 2.35278 21.0586 1.46713 21.394 0.423804C20.5104 0.948614 19.5434 1.31802 18.535 1.51597C17.8569 0.791918 16.9587 0.312003 15.9799 0.150737C15.001 -0.0105287 13.9963 0.155877 13.1218 0.624118C12.2472 1.09236 11.5517 1.83624 11.1432 2.74027C10.7348 3.64429 10.6362 4.65789 10.8628 5.62368C9.07249 5.53379 7.3211 5.06846 5.72228 4.2579C4.12346 3.44733 2.71294 2.30964 1.58227 0.918662C1.19566 1.58556 0.97336 2.35878 0.97336 3.18225C0.972928 3.92357 1.15548 4.65353 1.50483 5.30737C1.85417 5.96121 2.35951 6.51871 2.97599 6.93042C2.26103 6.90767 1.56185 6.71448 0.936632 6.36693V6.42493C0.93656 7.46465 1.29621 8.47238 1.95455 9.27712C2.6129 10.0819 3.52939 10.6341 4.54852 10.84C3.88528 11.0195 3.18992 11.0459 2.51496 10.9173C2.8025 11.8119 3.36259 12.5942 4.11684 13.1547C4.87108 13.7152 5.78172 14.0258 6.72125 14.043C5.12633 15.2951 3.15662 15.9742 1.12897 15.9712C0.769792 15.9713 0.410919 15.9504 0.0541992 15.9084C2.11238 17.2318 4.50825 17.9341 6.95515 17.9313C15.2382 17.9313 19.7664 11.071 19.7664 5.12109C19.7664 4.92779 19.7615 4.73255 19.7528 4.53925C20.6336 3.90228 21.3939 3.11353 21.9981 2.20993L22 2.20703Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://t.me/metastorm_chat" class="icon" target="_blank"><svg width="21" height="17"
+                            viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.5825 0.111779L0.98057 7.03576C-0.288937 7.52794 -0.281593 8.21153 0.747653 8.51636L5.52352 9.95443L16.5735 3.22489C17.096 2.91803 17.5734 3.08311 17.181 3.41933L8.22831 11.2183H8.22621L8.22831 11.2193L7.89886 15.971C8.38149 15.971 8.59447 15.7573 8.86516 15.5052L11.1849 13.3278L16.0101 16.768C16.8998 17.241 17.5387 16.9979 17.7601 15.973L20.9276 1.56402C21.2518 0.30926 20.4313 -0.258877 19.5825 0.111779Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://medium.com/@metastorm.app" class="icon" target="_blank"><svg width="19" height="15"
+                            viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.2534 3.06C2.26504 2.94587 2.24945 2.83064 2.20788 2.72353C2.16631 2.61641 2.09991 2.52038 2.014 2.44312L0.2394 0.317813V0H5.7475L10.0054 9.28594L13.7484 0H19V0.317813L17.4828 1.7625C17.4186 1.81148 17.369 1.87678 17.3393 1.95141C17.3097 2.02604 17.3012 2.10721 17.3147 2.18625V12.8119C17.3012 12.8909 17.3097 12.9721 17.3393 13.0467C17.369 13.1214 17.4186 13.1866 17.4828 13.2356L18.9648 14.6812V15H11.5131V14.6822L13.0482 13.2009C13.1993 13.0509 13.1993 13.0069 13.1993 12.7781V4.18875L8.9319 14.9644H8.3562L3.3877 4.18875V11.4113C3.34685 11.7141 3.4485 12.0206 3.6632 12.24L5.65915 14.6475V14.9644H0V14.6475L1.995 12.24C2.10056 12.1313 2.1789 11.9998 2.22376 11.8559C2.26863 11.712 2.27878 11.5597 2.2534 11.4113V3.06Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCXb-OY8EB7GKq3jsXMignRQ" class="icon" target="_blank"><svg
+                            width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.14667e-05 16.1683C1.21945e-05 16.9595 0.875263 17.4373 1.54078 17.0095L12.6915 9.84117C13.3038 9.44754 13.3038 8.55246 12.6915 8.15882L1.54095 0.990492C0.875446 0.56266 0.000198759 1.04049 0.000189487 1.83165L2.14667e-05 16.1683Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="buttons">
+                    <a href="" class="btn btn-2 text-white">Connect Wallet</a>
+                    <a href="" class="btn btn-1 text-white">Private Sale</a>
+                </div>
+            </nav>
+            <div class="container center-vertical w-90">
+                <img src="./imags/Metastorm.png" alt="Metastorm" class="metastorm">
+                <div class="text-uppercase text-white point-list fw-700">
+                    <p class="point-list-el"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.4">
+                                <path
+                                    d="M31.9197 16.1723H27.8224C27.2424 11.2636 23.3496 7.37085 18.441 6.7908V2.69353C18.441 2.546 18.3202 2.42529 18.1727 2.42529H16.161C16.0134 2.42529 15.8927 2.546 15.8927 2.69353V6.7908C10.9841 7.37085 7.09131 11.2636 6.51126 16.1723H2.41399C2.26646 16.1723 2.14575 16.293 2.14575 16.4405V18.4523C2.14575 18.5998 2.26646 18.7205 2.41399 18.7205H6.51126C7.09131 23.6292 10.9841 27.5219 15.8927 28.102V32.1992C15.8927 32.3468 16.0134 32.4675 16.161 32.4675H18.1727C18.3202 32.4675 18.441 32.3468 18.441 32.1992V28.102C23.3496 27.5219 27.2424 23.6292 27.8224 18.7205H31.9197C32.0672 18.7205 32.1879 18.5998 32.1879 18.4523V16.4405C32.1879 16.293 32.0672 16.1723 31.9197 16.1723ZM17.1668 25.6275C12.6471 25.6275 8.98571 21.9661 8.98571 17.4464C8.98571 12.9266 12.6471 9.26525 17.1668 9.26525C21.6866 9.26525 25.348 12.9266 25.348 17.4464C25.348 21.9661 21.6866 25.6275 17.1668 25.6275Z"
+                                    fill="#BDBBBA" />
+                                <path
+                                    d="M17.1671 13.4229C16.0908 13.4229 15.0849 13.8386 14.3238 14.6031C13.5627 15.3642 13.1436 16.3701 13.1436 17.4464C13.1436 18.5226 13.5627 19.5285 14.3238 20.2896C15.0849 21.0474 16.0941 21.4699 17.1671 21.4699C18.24 21.4699 19.2492 21.0507 20.0103 20.2896C20.7681 19.5285 21.1906 18.5193 21.1906 17.4464C21.1906 16.3734 20.7715 15.3642 20.0103 14.6031C19.2492 13.8386 18.2433 13.4229 17.1671 13.4229Z"
+                                    fill="#BDBBBA" />
+                            </g>
+                        </svg> The best first person shooter</p>
+                    <p class="point-list-el"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.4">
+                                <path
+                                    d="M31.9197 16.1723H27.8224C27.2424 11.2636 23.3496 7.37085 18.441 6.7908V2.69353C18.441 2.546 18.3202 2.42529 18.1727 2.42529H16.161C16.0134 2.42529 15.8927 2.546 15.8927 2.69353V6.7908C10.9841 7.37085 7.09131 11.2636 6.51126 16.1723H2.41399C2.26646 16.1723 2.14575 16.293 2.14575 16.4405V18.4523C2.14575 18.5998 2.26646 18.7205 2.41399 18.7205H6.51126C7.09131 23.6292 10.9841 27.5219 15.8927 28.102V32.1992C15.8927 32.3468 16.0134 32.4675 16.161 32.4675H18.1727C18.3202 32.4675 18.441 32.3468 18.441 32.1992V28.102C23.3496 27.5219 27.2424 23.6292 27.8224 18.7205H31.9197C32.0672 18.7205 32.1879 18.5998 32.1879 18.4523V16.4405C32.1879 16.293 32.0672 16.1723 31.9197 16.1723ZM17.1668 25.6275C12.6471 25.6275 8.98571 21.9661 8.98571 17.4464C8.98571 12.9266 12.6471 9.26525 17.1668 9.26525C21.6866 9.26525 25.348 12.9266 25.348 17.4464C25.348 21.9661 21.6866 25.6275 17.1668 25.6275Z"
+                                    fill="#BDBBBA" />
+                                <path
+                                    d="M17.1671 13.4229C16.0908 13.4229 15.0849 13.8386 14.3238 14.6031C13.5627 15.3642 13.1436 16.3701 13.1436 17.4464C13.1436 18.5226 13.5627 19.5285 14.3238 20.2896C15.0849 21.0474 16.0941 21.4699 17.1671 21.4699C18.24 21.4699 19.2492 21.0507 20.0103 20.2896C20.7681 19.5285 21.1906 18.5193 21.1906 17.4464C21.1906 16.3734 20.7715 15.3642 20.0103 14.6031C19.2492 13.8386 18.2433 13.4229 17.1671 13.4229Z"
+                                    fill="#BDBBBA" />
+                            </g>
+                        </svg> built on blockchain</p>
+                    <p class="point-list-el"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.4">
+                                <path
+                                    d="M31.9197 16.1723H27.8224C27.2424 11.2636 23.3496 7.37085 18.441 6.7908V2.69353C18.441 2.546 18.3202 2.42529 18.1727 2.42529H16.161C16.0134 2.42529 15.8927 2.546 15.8927 2.69353V6.7908C10.9841 7.37085 7.09131 11.2636 6.51126 16.1723H2.41399C2.26646 16.1723 2.14575 16.293 2.14575 16.4405V18.4523C2.14575 18.5998 2.26646 18.7205 2.41399 18.7205H6.51126C7.09131 23.6292 10.9841 27.5219 15.8927 28.102V32.1992C15.8927 32.3468 16.0134 32.4675 16.161 32.4675H18.1727C18.3202 32.4675 18.441 32.3468 18.441 32.1992V28.102C23.3496 27.5219 27.2424 23.6292 27.8224 18.7205H31.9197C32.0672 18.7205 32.1879 18.5998 32.1879 18.4523V16.4405C32.1879 16.293 32.0672 16.1723 31.9197 16.1723ZM17.1668 25.6275C12.6471 25.6275 8.98571 21.9661 8.98571 17.4464C8.98571 12.9266 12.6471 9.26525 17.1668 9.26525C21.6866 9.26525 25.348 12.9266 25.348 17.4464C25.348 21.9661 21.6866 25.6275 17.1668 25.6275Z"
+                                    fill="#BDBBBA" />
+                                <path
+                                    d="M17.1671 13.4229C16.0908 13.4229 15.0849 13.8386 14.3238 14.6031C13.5627 15.3642 13.1436 16.3701 13.1436 17.4464C13.1436 18.5226 13.5627 19.5285 14.3238 20.2896C15.0849 21.0474 16.0941 21.4699 17.1671 21.4699C18.24 21.4699 19.2492 21.0507 20.0103 20.2896C20.7681 19.5285 21.1906 18.5193 21.1906 17.4464C21.1906 16.3734 20.7715 15.3642 20.0103 14.6031C19.2492 13.8386 18.2433 13.4229 17.1671 13.4229Z"
+                                    fill="#BDBBBA" />
+                            </g>
+                        </svg> Play to earn in vr</p>
+                    <p class="point-list-el"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.4">
+                                <path
+                                    d="M31.9197 16.1723H27.8224C27.2424 11.2636 23.3496 7.37085 18.441 6.7908V2.69353C18.441 2.546 18.3202 2.42529 18.1727 2.42529H16.161C16.0134 2.42529 15.8927 2.546 15.8927 2.69353V6.7908C10.9841 7.37085 7.09131 11.2636 6.51126 16.1723H2.41399C2.26646 16.1723 2.14575 16.293 2.14575 16.4405V18.4523C2.14575 18.5998 2.26646 18.7205 2.41399 18.7205H6.51126C7.09131 23.6292 10.9841 27.5219 15.8927 28.102V32.1992C15.8927 32.3468 16.0134 32.4675 16.161 32.4675H18.1727C18.3202 32.4675 18.441 32.3468 18.441 32.1992V28.102C23.3496 27.5219 27.2424 23.6292 27.8224 18.7205H31.9197C32.0672 18.7205 32.1879 18.5998 32.1879 18.4523V16.4405C32.1879 16.293 32.0672 16.1723 31.9197 16.1723ZM17.1668 25.6275C12.6471 25.6275 8.98571 21.9661 8.98571 17.4464C8.98571 12.9266 12.6471 9.26525 17.1668 9.26525C21.6866 9.26525 25.348 12.9266 25.348 17.4464C25.348 21.9661 21.6866 25.6275 17.1668 25.6275Z"
+                                    fill="#BDBBBA" />
+                                <path
+                                    d="M17.1671 13.4229C16.0908 13.4229 15.0849 13.8386 14.3238 14.6031C13.5627 15.3642 13.1436 16.3701 13.1436 17.4464C13.1436 18.5226 13.5627 19.5285 14.3238 20.2896C15.0849 21.0474 16.0941 21.4699 17.1671 21.4699C18.24 21.4699 19.2492 21.0507 20.0103 20.2896C20.7681 19.5285 21.1906 18.5193 21.1906 17.4464C21.1906 16.3734 20.7715 15.3642 20.0103 14.6031C19.2492 13.8386 18.2433 13.4229 17.1671 13.4229Z"
+                                    fill="#BDBBBA" />
+                            </g>
+                        </svg> metaverse
+                    </p>
+                </div>
+                <div class="buttons">
+                    <a href="" class="gold-btn big-btn hover-anime">Deck</a>
+                    <a href="" class="btn-2 text-white big-btn hover-anime">Community</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="video">
+            <div class="features">
+                <div class="feature">
+                    <img src="./imags/1_star.png" alt="1-star" class="star">
+                    <p class="text-uppercase gold-text fs-25 fw-700">Play to earn</p>
+                </div>
+                <div class="feature">
+                    <img src="./imags/2_stars.png" alt="2-star" class="star">
+                    <p class="text-uppercase gold-text fs-25 fw-700">NFT trading</p>
+                </div>
+                <div class="feature">
+                    <img src="./imags/3_stars.png" alt="3-star" class="star">
+                    <p class="text-uppercase gold-text fs-25 fw-700">Free to play</p>
+                </div>
+            </div>
+            <div class="container center-horizontal">
+                <iframe width="1010" height="560" src="https://www.youtube.com/embed/8BAqLzIoeSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            </div>
+            <article id="what-is-metastorm">
+                <h2 class="text-white fw-700">What is</h2>
+                <img src="./imags/Metastorm_question.png" alt="" class="meta-que">
+                <div class="some-words">
+                    <span class="silver-text">MetaStorm is a blockchain based RPG VR shooter with a huge collection of
+                        <br>
+                        modern weapons that players can use to equip, level up, complete missions <br> and earn
+                        tokens</span>
+                    <span class="silver-text">
+                        Each player has the opportunity to build battle cards, collect weapons and <br> even steal
+                        unique
+                        tokens from other players
+                    </span>
+                    <span class="silver-text">
+                        MetaStorm also works as the basis for developing your own FPS project with <br> any ideas. And
+                        the
+                        reason for it is that MetaStorm includes many functions: <br> weapons, projectiles, uniforms,
+                        characters, various game modes, etc.
+                    </span>
+                </div>
+            </article>
+        </section>
+        <section id="NFT-boxes">
+            <h2 class="text-uppercase silver-text fw-700">Nft boxes</h2>
+            <p class="silver-text center-text fs-25">Several types of NFT BOXes will give players various advantages in the game, such as exclusive weapons and equipment, the ability to unlock <br> specific skills (such as a missile strike, call for a helicopter, etc.), the ability to open new
+                maps for battles, the ability to move to a new play tier <br> with more strong rivals.</p>
+            <div class="Carousel">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators move-bottom">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active rounded-circle p-2" style="width: 3px;"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="rounded-circle p-2" style="width: 3px;"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="rounded-circle p-2" style="width: 3px;"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imags/Boxes.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/Boxes.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/Boxes.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev move-left" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next move-right" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="Carousel-1">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators move-bottom">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imags/Box_Outfit.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/Box_skills.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/Box_Weapon.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/Box_skills.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/Box_Weapon.png" alt="Los Angeles" class="d-block w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Weapons">
+            <h2 class="silver-text text-uppercase center-text">Nft equipment</h2>
+            <div class="Carousel-weapon">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators move-bottom">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev move-left" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next move-right" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="Carousel-1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators move-bottom">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imags/NFT_weapon_sm.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="Metaverse">
+            <h2 class="silver-text text-uppercase center-text">Metaverse of metastorm</h2>
+            <p class="text-white center-text">VR allows a player to become a part of the game world, get used to the role of his/her character and feel and <br> understand the story of the game most deeply.</p>
+            <iframe width="1010" height="560" src="https://www.youtube.com/embed/f1a9N62l_bU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="metaverse-img"></iframe>
+        </section>
+        <section id="Game-concept">
+            <h2 class="silver-text text-uppercase center-text">Game Concept</h2>
+            <div class="container game-concept">
+                <div class="left-part-concept">
+                    <p class="text-white">
+                        The game concept includes several game modes, one of the modes is to <br> create your own map for play to earn tokens. Players can create their own <br> cards and earn tokens when other players visit them.
+                    </p>
+                    <p class="text-white">Players can create guilds and fight each other in order to steal the lands.
+                        <br> Guilds can build their houses, headquarters, etc.
+                    </p>
+                    <div class="buttons">
+                        <button class="game-concept-btn gold-btn ">Deck</button>
+                        <button class="game-concept-btn outline-btn">Community</button>
+                    </div>
+                </div>
+                <div class="right-part-concept">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./imags/Logo_card.png" alt="">
+                            <p class="text-uppercase text-white fw-700">mode play</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-uppercase point-list fw-700">
+                                <p class="point-list-el"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.4">
+                                            <path
+                                                d="M31.9197 16.1723H27.8224C27.2424 11.2636 23.3496 7.37085 18.441 6.7908V2.69353C18.441 2.546 18.3202 2.42529 18.1727 2.42529H16.161C16.0134 2.42529 15.8927 2.546 15.8927 2.69353V6.7908C10.9841 7.37085 7.09131 11.2636 6.51126 16.1723H2.41399C2.26646 16.1723 2.14575 16.293 2.14575 16.4405V18.4523C2.14575 18.5998 2.26646 18.7205 2.41399 18.7205H6.51126C7.09131 23.6292 10.9841 27.5219 15.8927 28.102V32.1992C15.8927 32.3468 16.0134 32.4675 16.161 32.4675H18.1727C18.3202 32.4675 18.441 32.3468 18.441 32.1992V28.102C23.3496 27.5219 27.2424 23.6292 27.8224 18.7205H31.9197C32.0672 18.7205 32.1879 18.5998 32.1879 18.4523V16.4405C32.1879 16.293 32.0672 16.1723 31.9197 16.1723ZM17.1668 25.6275C12.6471 25.6275 8.98571 21.9661 8.98571 17.4464C8.98571 12.9266 12.6471 9.26525 17.1668 9.26525C21.6866 9.26525 25.348 12.9266 25.348 17.4464C25.348 21.9661 21.6866 25.6275 17.1668 25.6275Z"
+                                                fill="#BDBBBA" />
+                                            <path
+                                                d="M17.1671 13.4229C16.0908 13.4229 15.0849 13.8386 14.3238 14.6031C13.5627 15.3642 13.1436 16.3701 13.1436 17.4464C13.1436 18.5226 13.5627 19.5285 14.3238 20.2896C15.0849 21.0474 16.0941 21.4699 17.1671 21.4699C18.24 21.4699 19.2492 21.0507 20.0103 20.2896C20.7681 19.5285 21.1906 18.5193 21.1906 17.4464C21.1906 16.3734 20.7715 15.3642 20.0103 14.6031C19.2492 13.8386 18.2433 13.4229 17.1671 13.4229Z"
+                                                fill="#BDBBBA" />
+                                        </g>
+                                    </svg> Team mode</p>
+                                <p class="point-list-el"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.4">
+                                            <path
+                                                d="M31.9197 16.1723H27.8224C27.2424 11.2636 23.3496 7.37085 18.441 6.7908V2.69353C18.441 2.546 18.3202 2.42529 18.1727 2.42529H16.161C16.0134 2.42529 15.8927 2.546 15.8927 2.69353V6.7908C10.9841 7.37085 7.09131 11.2636 6.51126 16.1723H2.41399C2.26646 16.1723 2.14575 16.293 2.14575 16.4405V18.4523C2.14575 18.5998 2.26646 18.7205 2.41399 18.7205H6.51126C7.09131 23.6292 10.9841 27.5219 15.8927 28.102V32.1992C15.8927 32.3468 16.0134 32.4675 16.161 32.4675H18.1727C18.3202 32.4675 18.441 32.3468 18.441 32.1992V28.102C23.3496 27.5219 27.2424 23.6292 27.8224 18.7205H31.9197C32.0672 18.7205 32.1879 18.5998 32.1879 18.4523V16.4405C32.1879 16.293 32.0672 16.1723 31.9197 16.1723ZM17.1668 25.6275C12.6471 25.6275 8.98571 21.9661 8.98571 17.4464C8.98571 12.9266 12.6471 9.26525 17.1668 9.26525C21.6866 9.26525 25.348 12.9266 25.348 17.4464C25.348 21.9661 21.6866 25.6275 17.1668 25.6275Z"
+                                                fill="#BDBBBA" />
+                                            <path
+                                                d="M17.1671 13.4229C16.0908 13.4229 15.0849 13.8386 14.3238 14.6031C13.5627 15.3642 13.1436 16.3701 13.1436 17.4464C13.1436 18.5226 13.5627 19.5285 14.3238 20.2896C15.0849 21.0474 16.0941 21.4699 17.1671 21.4699C18.24 21.4699 19.2492 21.0507 20.0103 20.2896C20.7681 19.5285 21.1906 18.5193 21.1906 17.4464C21.1906 16.3734 20.7715 15.3642 20.0103 14.6031C19.2492 13.8386 18.2433 13.4229 17.1671 13.4229Z"
+                                                fill="#BDBBBA" />
+                                        </g>
+                                    </svg> Deathmatch mode</p>
+                                <p class="point-list-el"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.4">
+                                            <path
+                                                d="M31.9197 16.1723H27.8224C27.2424 11.2636 23.3496 7.37085 18.441 6.7908V2.69353C18.441 2.546 18.3202 2.42529 18.1727 2.42529H16.161C16.0134 2.42529 15.8927 2.546 15.8927 2.69353V6.7908C10.9841 7.37085 7.09131 11.2636 6.51126 16.1723H2.41399C2.26646 16.1723 2.14575 16.293 2.14575 16.4405V18.4523C2.14575 18.5998 2.26646 18.7205 2.41399 18.7205H6.51126C7.09131 23.6292 10.9841 27.5219 15.8927 28.102V32.1992C15.8927 32.3468 16.0134 32.4675 16.161 32.4675H18.1727C18.3202 32.4675 18.441 32.3468 18.441 32.1992V28.102C23.3496 27.5219 27.2424 23.6292 27.8224 18.7205H31.9197C32.0672 18.7205 32.1879 18.5998 32.1879 18.4523V16.4405C32.1879 16.293 32.0672 16.1723 31.9197 16.1723ZM17.1668 25.6275C12.6471 25.6275 8.98571 21.9661 8.98571 17.4464C8.98571 12.9266 12.6471 9.26525 17.1668 9.26525C21.6866 9.26525 25.348 12.9266 25.348 17.4464C25.348 21.9661 21.6866 25.6275 17.1668 25.6275Z"
+                                                fill="#BDBBBA" />
+                                            <path
+                                                d="M17.1671 13.4229C16.0908 13.4229 15.0849 13.8386 14.3238 14.6031C13.5627 15.3642 13.1436 16.3701 13.1436 17.4464C13.1436 18.5226 13.5627 19.5285 14.3238 20.2896C15.0849 21.0474 16.0941 21.4699 17.1671 21.4699C18.24 21.4699 19.2492 21.0507 20.0103 20.2896C20.7681 19.5285 21.1906 18.5193 21.1906 17.4464C21.1906 16.3734 20.7715 15.3642 20.0103 14.6031C19.2492 13.8386 18.2433 13.4229 17.1671 13.4229Z"
+                                                fill="#BDBBBA" />
+                                        </g>
+                                    </svg> Storyline mode</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="./imags/Logo_card.png" alt="">
+                            <p class="text-uppercase text-white fw-700">mode play</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-uppercase point-list fw-700">
+                                <p class="point-list-el"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g opacity="0.4">
+                                            <path
+                                                d="M31.9197 16.1723H27.8224C27.2424 11.2636 23.3496 7.37085 18.441 6.7908V2.69353C18.441 2.546 18.3202 2.42529 18.1727 2.42529H16.161C16.0134 2.42529 15.8927 2.546 15.8927 2.69353V6.7908C10.9841 7.37085 7.09131 11.2636 6.51126 16.1723H2.41399C2.26646 16.1723 2.14575 16.293 2.14575 16.4405V18.4523C2.14575 18.5998 2.26646 18.7205 2.41399 18.7205H6.51126C7.09131 23.6292 10.9841 27.5219 15.8927 28.102V32.1992C15.8927 32.3468 16.0134 32.4675 16.161 32.4675H18.1727C18.3202 32.4675 18.441 32.3468 18.441 32.1992V28.102C23.3496 27.5219 27.2424 23.6292 27.8224 18.7205H31.9197C32.0672 18.7205 32.1879 18.5998 32.1879 18.4523V16.4405C32.1879 16.293 32.0672 16.1723 31.9197 16.1723ZM17.1668 25.6275C12.6471 25.6275 8.98571 21.9661 8.98571 17.4464C8.98571 12.9266 12.6471 9.26525 17.1668 9.26525C21.6866 9.26525 25.348 12.9266 25.348 17.4464C25.348 21.9661 21.6866 25.6275 17.1668 25.6275Z"
+                                                fill="#BDBBBA" />
+                                            <path
+                                                d="M17.1671 13.4229C16.0908 13.4229 15.0849 13.8386 14.3238 14.6031C13.5627 15.3642 13.1436 16.3701 13.1436 17.4464C13.1436 18.5226 13.5627 19.5285 14.3238 20.2896C15.0849 21.0474 16.0941 21.4699 17.1671 21.4699C18.24 21.4699 19.2492 21.0507 20.0103 20.2896C20.7681 19.5285 21.1906 18.5193 21.1906 17.4464C21.1906 16.3734 20.7715 15.3642 20.0103 14.6031C19.2492 13.8386 18.2433 13.4229 17.1671 13.4229Z"
+                                                fill="#BDBBBA" />
+                                        </g>
+                                    </svg> Build your own map to play <br> and earn</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article id="Token-model">
+                <div class="container">
+                    <h2 class="silver-text text-uppercase fw-700">token model</h2>
+                    <div class="token-mest">
+                        <img src="./imags/Logo_MetaStorm.png" alt="Logo">
+                        <div>
+                            <p class="text-uppercase gold-text">Token $mest</p>
+                            <p class="text-white">Maximum supply = 500,000,000</p>
+                        </div>
+                    </div>
+                    <ul class="text-white star-list">
+                        <li> <img src="./imags/Star.svg" alt=""> Used to complete to complete missions with rare drops of NFT <br> tokens.</li>
+                        <li><img src="./imags/Star.svg" alt="">Conducting in-game events</li>
+                        <li><img src="./imags/Star.svg" alt="">Bet for receiving weekly rewards in the form of $MEST
+                            <br> and NFT tokens.</li>
+                        <li><img src="./imags/Star.svg" alt="">Conducting major tournaments among guilds</li>
+                        <li><img src="./imags/Star.svg" alt="">Purchase of land in the metaverse of NFT token sets.</li>
+                        <li><img src="./imags/Star.svg" alt="">Makes it is possible to receive rewards for the game to
+                            <br> open new cards</li>
+                        <li><img src="./imags/Star.svg" alt="">Used in different game modes</li>
+                        <li><img src="./imags/Star.svg" alt="">Used to buy and upgrade weapons.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <article id="roadmap-sm">
+            <h2 class=" silver-text text-uppercase fw-700 center-text">Roadmap</h2>
+        </article>
+        <section id="Roadmap">
+            <h2 class="silver-text text-uppercase fw-700 center-text">Roadmap</h2>
+            <div class="container">
+                <div class="Q2-4 col">
+                    <h3 class="silver-text text-uppercase fw-700">Q2 - Q4 2021</h3>
+                    <ul class="text-white">
+                        <li>Conclusion of commercial <br> agreements with strategic investors <br> and a development group
+                        </li>
+                        <li>Development of marketing <br> materials for private investors</li>
+                        <li>Seed Sale</li>
+                        <li>Conclusion of new partnership</li>
+                        <li>Website launch</li>
+                    </ul>
+                </div>
+                <div class="Q1 col-reverse">
+                    <h3 class="silver-text text-uppercase fw-700">Q1 2022</h3>
+                    <ul class="text-white">
+                        <li>Conducting a marketing campaign <br> to develop the community
+                        </li>
+                        <li>Private Sale</li>
+                        <li>Public Sale</li>
+                        <li>MEST Token Listing</li>
+                        <li>Pre-alpha Release</li>
+                    </ul>
+                </div>
+                <div class="Q2 col">
+                    <h3 class="silver-text text-uppercase fw-700">Q2 2022</h3>
+                    <ul class="text-white">
+                        <li>Conclusion of commercial agreements with <br> strategic investors and a development group
+                        </li>
+                        <li>Development of marketing materials for <br> private investors</li>
+                        <li>Seed Sale</li>
+                        <li>Conclusion of new partnership</li>
+                        <li>Website launch</li>
+                    </ul>
+                </div>
+                <div class="Q3 col-reverse">
+                    <h3 class="silver-text text-uppercase fw-700">Q3 2022</h3>
+                    <ul class="text-white">
+                        <li>Early access to the Metaverse</li>
+                        <li>Full 3D models</li>
+                        <li>Release of new NFT tokens: map, <br> weapon skin</li>
+                        <li>weapon upgrade function</li>
+                    </ul>
+                </div>
+                <div class="Q4 col">
+                    <h3 class="silver-text text-uppercase fw-700">Q4 2022(October)</h3>
+                    <ul class="text-white">
+                        <li>MetaStorm 1.0 version</li>
+                        <li>IOS & Android Application</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="Team">
+            <div class="container">
+                <h2 class="silver-text text-uppercase fw-700">Team</h2>
+                <p class="center-text text-white">MetaSrorm is a team of over 20 people who have a strong passion for both gaming and blockchain. Most of the team members have <br> over 10 years of experience in the gaming industry, and the team also has a wide experience in the field
+                    of virtual development. <br> Blockchain is about to revolutionize the gaming world and the MetaStorm team wants to make the most possible input into this industry.</p>
+                <p class="sm-acive text-white">MMetaSrorm is a team of over 20 people who have a strong passion for both gaming and blockchain. Most of the team members have over 10 years of experience in the gaming industry, and the team also has a wide experience in the field of
+                    virtual development. Blockchain is about to revolutionize the gaming world and the MetaStorm team wants to make the most possible input into this industry.
+                    <div class="team-members">
+                        <div class="team-member">
+                            <img src="./imags/Team_1.png" alt="">
+                        </div>
+                        <div class="team-member">
+                            <img src="./imags/Logo_MetaStorm.png" alt="">
+                        </div>
+                        <div class="team-member n3">
+                            <img src="./imags/Team_2.png" alt="">
+                        </div>
+                        <div class="team-member n3">
+                            <img src="./imags/Logo_MetaStorm.png" alt="">
+                        </div>
+                        <div class="team-member n5">
+                            <img src="./imags/Team_3.png" alt="">
+                        </div>
+                        <div class="team-member n6">
+                            <img src="./imags/Logo_MetaStorm.png" alt="">
+                        </div>
+                        <div class="team-member n2">
+                            <img src="./imags/Logo_MetaStorm.png" alt="">
+                        </div>
+                        <div class="team-member n2">
+                            <img src="./imags/Team_4.png" alt="">
+                        </div>
+                        <div class="team-member n4">
+                            <img src="./imags/Logo_MetaStorm.png" alt="">
+                        </div>
+                        <div class="team-member n4">
+                            <img src="./imags/Team_5.png" alt="">
+                        </div>
+                        <div class="team-member n7">
+                            <img src="./imags/Logo_MetaStorm.png" alt="">
+                        </div>
+                        <div class="team-member n8">
+                            <img src="./imags/Team_6.png" alt="">
+                        </div>
+                    </div>
+                    <button class="gold-btn text-uppercase btn fw-700">Meet our team</button>
+            </div>
+        </section>
+        <section id="Partners">
+            <div class="container">
+                <h2 class="silver-text text-uppercase">Partners</h2>
+                <div class="partners">
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                    <div class="partner"></div>
+                </div>
+                <div class="Carousel-1">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators move-bottom">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="item"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p class="text-white ctn">© 2021 MetaStorm. All rights reserved</p>
+                <div class="icons">
+                    <p class="text-white">Contact us</p>
+                    <a href="https://twitter.com/METASTORM_APP" class="icon">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 2.20703C21.193 2.56465 20.326 2.80628 19.4146 2.91549C20.355 2.35278 21.0586 1.46713 21.394 0.423804C20.5104 0.948614 19.5434 1.31802 18.535 1.51597C17.8569 0.791918 16.9587 0.312003 15.9799 0.150737C15.001 -0.0105287 13.9963 0.155877 13.1218 0.624118C12.2472 1.09236 11.5517 1.83624 11.1432 2.74027C10.7348 3.64429 10.6362 4.65789 10.8628 5.62368C9.07249 5.53379 7.3211 5.06846 5.72228 4.2579C4.12346 3.44733 2.71294 2.30964 1.58227 0.918662C1.19566 1.58556 0.97336 2.35878 0.97336 3.18225C0.972928 3.92357 1.15548 4.65353 1.50483 5.30737C1.85417 5.96121 2.35951 6.51871 2.97599 6.93042C2.26103 6.90767 1.56185 6.71448 0.936632 6.36693V6.42493C0.93656 7.46465 1.29621 8.47238 1.95455 9.27712C2.6129 10.0819 3.52939 10.6341 4.54852 10.84C3.88528 11.0195 3.18992 11.0459 2.51496 10.9173C2.8025 11.8119 3.36259 12.5942 4.11684 13.1547C4.87108 13.7152 5.78172 14.0258 6.72125 14.043C5.12633 15.2951 3.15662 15.9742 1.12897 15.9712C0.769792 15.9713 0.410919 15.9504 0.0541992 15.9084C2.11238 17.2318 4.50825 17.9341 6.95515 17.9313C15.2382 17.9313 19.7664 11.071 19.7664 5.12109C19.7664 4.92779 19.7615 4.73255 19.7528 4.53925C20.6336 3.90228 21.3939 3.11353 21.9981 2.20993L22 2.20703Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="https://t.me/metastorm_chat" class=" icon "><svg width="21 " height="17 "
+                            viewBox="0 0 21 17 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path
+                                d="M19.5825 0.111779L0.98057 7.03576C-0.288937 7.52794 -0.281593 8.21153 0.747653 8.51636L5.52352 9.95443L16.5735 3.22489C17.096 2.91803 17.5734 3.08311 17.181 3.41933L8.22831 11.2183H8.22621L8.22831 11.2193L7.89886 15.971C8.38149
+                        15.971 8.59447 15.7573 8.86516 15.5052L11.1849 13.3278L16.0101 16.768C16.8998 17.241 17.5387 16.9979 17.7601 15.973L20.9276 1.56402C21.2518 0.30926 20.4313 -0.258877 19.5825 0.111779Z "
+                                fill="white " />
+                        </svg>
+                    </a>
+                    <a href="https://medium.com/@metastorm.app " class="icon "><svg width="19 " height="15 "
+                            viewBox="0 0 19 15 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M2.2534 3.06C2.26504 2.94587 2.24945 2.83064 2.20788 2.72353C2.16631 2.61641 2.09991 2.52038 2.014 2.44312L0.2394 0.317813V0H5.7475L10.0054 9.28594L13.7484 0H19V0.317813L17.4828 1.7625C17.4186 1.81148 17.369 1.87678
+                        17.3393 1.95141C17.3097 2.02604 17.3012 2.10721 17.3147 2.18625V12.8119C17.3012 12.8909 17.3097 12.9721 17.3393 13.0467C17.369 13.1214 17.4186 13.1866 17.4828 13.2356L18.9648 14.6812V15H11.5131V14.6822L13.0482 13.2009C13.1993 13.0509
+                        13.1993 13.0069 13.1993 12.7781V4.18875L8.9319 14.9644H8.3562L3.3877 4.18875V11.4113C3.34685 11.7141 3.4485 12.0206 3.6632 12.24L5.65915 14.6475V14.9644H0V14.6475L1.995 12.24C2.10056 12.1313 2.1789 11.9998 2.22376 11.8559C2.26863 11.712
+                        2.27878 11.5597 2.2534 11.4113V3.06Z " fill="white " />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCXb-OY8EB7GKq3jsXMignRQ " class="icon "><svg width="14 "
+                            height="18 " viewBox="0 0 14 18 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M2.14667e-05 16.1683C1.21945e-05 16.9595 0.875263 17.4373 1.54078 17.0095L12.6915 9.84117C13.3038 9.44754 13.3038 8.55246 12.6915 8.15882L1.54095 0.990492C0.875446 0.56266 0.000198759 1.04049 0.000189487 1.83165L2.14667e-05
+                        16.1683Z " fill="white " />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

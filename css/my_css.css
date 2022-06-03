@@ -1,0 +1,928 @@
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    width: 100vw;
+    font-weight: 400;
+}
+
+.move-left {
+    position: absolute;
+    left: -10%;
+    transform: scale(2);
+}
+
+.move-right {
+    position: absolute;
+    right: -10%;
+    transform: scale(2);
+}
+
+.move-bottom {
+    position: absolute;
+    bottom: -10%;
+}
+
+.hover-anime {
+    opacity: 75%;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.hover-anime:hover {
+    opacity: 100%;
+}
+
+.gold-text {
+    background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.68));
+    margin: 0px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.w-90 {
+    height: 90vh;
+}
+
+.metastorm {
+    width: 60%;
+}
+
+.center-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.center-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    opacity: 75%;
+}
+
+.btn:hover {
+    opacity: 100%;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.btn-2 {
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+
+.btn-1 {
+    text-decoration: none;
+    border-radius: 5px;
+    background: rgba(147, 82, 67, 1);
+}
+
+.nav {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.47) 25.63%, rgba(0, 0, 0, 0) 117.23%);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.icon {
+    background: linear-gradient(0deg, #111110, #111110), #C4C4C4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    opacity: 75%;
+}
+
+.icon:hover {
+    opacity: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    opacity: 75%;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 100%;
+    opacity: 100%;
+}
+
+.gradient {
+    background: linear-gradient(90.64deg, rgba(0, 0, 0, 0.53) 10.09%, rgba(0, 0, 0, 0.56) 46.46%, rgba(0, 0, 0, 0) 92.25%);
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-image: url(../imags/First_bg.jpg);
+    height: 100vh;
+}
+
+.point-list {
+    font-size: 22px;
+}
+
+.point-list-el {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.big-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+
+.gold-btn {
+    color: #774200;
+    text-decoration: none;
+    background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%);
+}
+
+#video {
+    padding-top: 2%;
+    height: 164.5vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url(../imags/pay_to_earn_bg.png);
+    background-color: #111110;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.features {
+    display: flex;
+    gap: 25rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star {
+    width: 80%;
+}
+
+.meta-que {
+    width: 35%;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+#what-is-metastorm {
+    background-image: url(../imags/Component_1.png);
+    height: 80vh;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    padding-left: 15%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.silver-text {
+    background: linear-gradient(rgb(210, 216, 222) 0%, rgb(254, 255, 255) 23.96%, rgb(192, 195, 198) 50.52%, rgb(182, 187, 191) 79.69%, rgb(172, 178, 183) 98.44%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.some-words {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#NFT-boxes {
+    background-image: url(../imags/NFT_box_bg.png);
+    background-color: #111110;
+    height: 120vh;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indicators {
+    text-align: center;
+}
+
+#Weapons {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#Metaverse {
+    background-image: url(../imags/Metacerse_bg.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.metaverse-img {
+    margin: 0 auto;
+    height: 70%;
+    width: 70%;
+    object-fit: scale-down;
+}
+
+#Game-concept {
+    background-image: url(../imags/Game_Concept_bg.png);
+    height: 180vh;
+    background-color: #111110;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-concept-btn {
+    border-radius: 5px;
+    width: 35%;
+    height: 4rem;
+    font-size: x-large;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 75%;
+    margin-top: 2rem;
+}
+
+.game-concept-btn:hover {
+    opacity: 100%;
+}
+
+.outline-btn {
+    background: transparent;
+    border: 1.78px solid rgba(255, 255, 255, 1);
+    color: white;
+}
+
+.left-part-concept {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#Game-concept h2 {
+    margin-bottom: 8rem;
+}
+
+#Game-concept p {
+    margin-bottom: 0.5rem;
+}
+
+.game-concept {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.29);
+    border: 3px solid #515050;
+    box-sizing: border-box;
+    border-radius: 0px 0px 25px 25px;
+    width: 35rem;
+    margin-bottom: 5rem;
+}
+
+.card-header {
+    background: linear-gradient(180deg, #5B2B30 -90.77%, #6B3935 12.11%, #A25B48 97.02%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    gap: 1rem;
+}
+
+.card-body {
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.card-body p {
+    color: rgba(255, 255, 255, 0.63);
+}
+
+#Token-model {
+    background-image: url(../imags/Token_Model.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding-top: 8%;
+    padding-left: 11.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#Token-model h2 {
+    margin: 0;
+}
+
+#Token-model .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.token-mest {
+    width: 30%;
+    border: 2px solid rgba(81, 80, 80, 1);
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 20px;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.star-list {
+    list-style: none;
+    position: relative;
+    right: 3rem;
+}
+
+.star-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+#Roadmap {
+    background-image: url(../imags/Roadmap_line_norm.png);
+    height: 120vh;
+    width: 100%;
+    background-color: #111110;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#Roadmap h2 {
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+
+#Roadmap ul {
+    list-style-image: url(../imags/svg/dash-lg.svg);
+}
+
+#Roadmap li {
+    margin-bottom: 1rem;
+}
+
+.Q2-4 {
+    position: absolute;
+    top: 35rem;
+    left: 32rem;
+}
+
+#roadmap-sm {
+    display: none;
+}
+
+.Q1 {
+    position: absolute;
+    left: 49rem;
+    bottom: 25rem;
+}
+
+.Q1 ul {
+    position: relative;
+    right: 3rem
+}
+
+.Q2 {
+    position: absolute;
+    left: 64rem;
+    top: 35rem;
+}
+
+.Q2 ul {
+    position: relative;
+    right: 6rem;
+}
+
+.Q2-4 ul {
+    position: relative;
+    right: 4rem;
+}
+
+.Q3 {
+    position: absolute;
+    left: 78rem;
+    top: 18rem;
+}
+
+.Q3 ul {
+    position: relative;
+    right: 3rem
+}
+
+.Q4 {
+    position: absolute;
+    left: 93rem;
+    top: 35rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+
+.col-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 12rem;
+}
+
+#Team {
+    background-image: url(../imags/Team_bg.png);
+    height: 90vh;
+    background-color: #111110;
+}
+
+#Team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+#Team .btn {
+    width: 30%;
+    height: 3rem;
+    font-size: x-large;
+    border-radius: 7px;
+    border: 1.78082px solid #FFF61B;
+}
+
+.team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16.5%;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#Partners {
+    background-image: url(../imags/Partners_bg.png);
+    height: 80vh;
+    background-color: #111110;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Partners .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    width: 80%;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.partner {
+    width: 22.5%;
+    height: 7rem;
+    background: rgba(196, 196, 196, 0.42);
+    border: 2px solid rgba(255, 255, 255, 0.58);
+    border-radius: 12px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+    position: relative;
+    bottom: 10%;
+    height: 10vh;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .icons {
+    gap: 2rem;
+    align-items: center;
+}
+
+.Carousel-1 {
+    display: none;
+}
+
+.img-2 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        width: 100vw;
+    }
+    header {
+        background-image: url(../imags/header-tel-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #111110;
+        height: 100vh;
+        width: 100%;
+    }
+    .icons {
+        order: 1;
+    }
+    .nav-links {
+        order: 2;
+        position: absolute;
+        top: 10vh;
+        gap: 6rem;
+    }
+    .nav {
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 8vh;
+    }
+    .icons {
+        gap: 0.5rem;
+    }
+    .buttons {
+        flex-wrap: wrap;
+    }
+    .big-btn {
+        width: 80%;
+        height: 4rem;
+    }
+    .nav .buttons {
+        gap: 0.5rem;
+    }
+    .logo {
+        width: 15%;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .icon {
+        height: 28px;
+        width: 28px;
+    }
+    .metastorm {
+        width: 100%;
+    }
+    #video {
+        height: 220vh;
+        width: 100%;
+        background-size: contain;
+        padding: 0;
+        background-image: url(../imags/Video_bg_sm.png);
+    }
+    .features {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .video {
+        width: 100%;
+        background-position: center;
+    }
+    #what-is-metastorm {
+        background-image: url(../imags/What_is_meta_sm_bg.png);
+        height: 150vh;
+        background-size: cover;
+    }
+    .Carousel {
+        display: none;
+    }
+    .Carousel-weapon {
+        display: none;
+    }
+    .Carousel-1 {
+        display: block;
+    }
+    #NFT-boxes p {
+        text-align: left;
+    }
+    #NFT-boxes {
+        padding-top: 1rem;
+    }
+    #Weapons {
+        padding-top: 3rem;
+        height: 90vh;
+    }
+    #Metaverse {
+        background-position: center;
+        height: 120vh;
+        gap: 1rem;
+    }
+    .metaverse-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #Metaverse h2 {
+        padding-top: 13rem;
+        font-weight: 700;
+    }
+    #Metaverse p {
+        padding-top: 1rem;
+    }
+    .game-concept {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 150vh;
+    }
+    .card {
+        width: 100%;
+    }
+    .game-concept-btn {
+        width: 100%;
+    }
+    .game-concept .buttons {
+        gap: 0.5rem;
+    }
+    #Game-concept {
+        height: 300vh;
+    }
+    #Token-model {
+        background-image: url(../imags/Token_Model_sm.png);
+        background-size: cover;
+        height: 200vh;
+        align-items: center;
+    }
+    #Token-model h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .token-mest {
+        width: 100vw;
+    }
+    .star-list li {
+        margin-bottom: 3rem;
+    }
+    #Team .container {
+        width: 100%;
+    }
+    #Team .center-text {
+        display: none;
+    }
+    #Team .sm-active {
+        display: block;
+    }
+    #Team {
+        padding-top: 3rem;
+        height: 210vh;
+        background-size: cover;
+    }
+    .team-member {
+        width: 50%;
+    }
+    .n2 {
+        order: 0;
+    }
+    .n3 {
+        order: 1;
+    }
+    .n4 {
+        order: 2;
+    }
+    .n5 {
+        order: 3;
+    }
+    .n5 {
+        order: 4;
+    }
+    .n6 {
+        order: 5;
+    }
+    .n7 {
+        order: 6;
+    }
+    .n8 {
+        order: 7;
+    }
+    #Team .btn {
+        width: 80%;
+        height: 5rem;
+    }
+    .partner {
+        width: 100%;
+    }
+    .partners {
+        display: none;
+    }
+    footer .icons {
+        order: 0;
+    }
+    footer .ctn {
+        order: 1;
+    }
+    #Partners {
+        height: 50vh;
+        background-size: cover;
+        padding-bottom: 4rem;
+        background-position: center;
+    }
+    #Partners .move-bottom {
+        top: 7rem;
+        transform: scale(1.5);
+    }
+    #Partners .carousel-item {
+        width: 80vw;
+        height: 5rem;
+        border-radius: 12px;
+        background: rgba(196, 196, 196, 0.42);
+        border: 2px solid rgba(255, 255, 255, 0.58)
+    }
+    footer .container {
+        padding-top: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-body {
+        padding-left: 2.5rem;
+    }
+    #Roadmap {
+        background-image: url(../imags/Roadmap_line_norm_sm.png);
+        background-position: center;
+        background-position: bottom;
+        height: 120vh;
+        background-size: cover;
+    }
+    #Roadmap h2 {
+        padding: 0;
+        display: none;
+    }
+    .img-1 {
+        display: none;
+    }
+    .img-2 {
+        display: block;
+        position: relative;
+        left: 0.5rem;
+    }
+    #roadmap-sm {
+        background-color: #000000 !important;
+        display: block !important;
+        padding-top: 1rem;
+        height: 10vh;
+    }
+    .Q2-4 {
+        position: absolute;
+        top: 1rem;
+        left: 12rem;
+        gap: 0.5rem;
+    }
+    .col-reverse {
+        flex-direction: column;
+    }
+    .Q1 {
+        position: absolute;
+        top: 14.5rem;
+        left: 12rem;
+        gap: 0.5rem;
+    }
+    #Roadmap ul {
+        position: relative;
+        right: 0;
+        font-size: 14px;
+    }
+    .Q2 {
+        position: absolute;
+        top: 27rem;
+        left: 12rem;
+        gap: 0.5rem;
+    }
+    .Q3 {
+        position: absolute;
+        top: 41.5rem;
+        left: 12rem;
+        gap: 0.5rem;
+    }
+    .Q4 {
+        position: absolute;
+        top: 52.5rem;
+        left: 12rem;
+        gap: 0.5rem;
+    }
+    #Roadmap li {
+        margin-bottom: 0rem;
+    }
+    iframe {
+        width: 80%;
+        height: 20rem;
+    }
+    #Metaverse iframe {
+        width: 80%;
+        height: 20rem;
+    }
+}
